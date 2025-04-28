@@ -20,7 +20,7 @@ public class CrashDetector : MonoBehaviour
         }
     }
 
-    void ReloadScene()
+    public void ReloadScene()
     {
         SceneManager.LoadScene(0);
     }
