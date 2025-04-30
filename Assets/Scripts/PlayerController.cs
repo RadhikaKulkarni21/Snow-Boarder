@@ -27,11 +27,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Disabling controls after player crashes to avoid movement
     public void DisableControls()
     {
         canMove = false;
     }
 
+    //Boost to initiate jumps
     void RespondToBoost()
     {
         if (Input.GetKey(KeyCode.UpArrow))
@@ -43,7 +45,8 @@ public class PlayerController : MonoBehaviour
             surfaceEffector2D.speed = baseSpeed;
         }
     }
-   
+  
+    //To move player using left and right arrows and control motion
     void RotatePlayer()
     {
         if (Input.GetKey(KeyCode.LeftArrow))

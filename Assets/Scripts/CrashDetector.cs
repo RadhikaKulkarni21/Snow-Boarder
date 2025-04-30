@@ -10,6 +10,7 @@ public class CrashDetector : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnTriggerEnter2D(Collider2D collision)
     {
+        //Checking tags for particle effect to start
         if(collision.tag == "Ground" && !hasCrashed)
         {
             hasCrashed = true;
@@ -20,6 +21,7 @@ public class CrashDetector : MonoBehaviour
         }
     }
 
+    //Reload scene after crash is complete
     public void ReloadScene()
     {
         SceneManager.LoadScene(0);

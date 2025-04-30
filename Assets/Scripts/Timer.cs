@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
-
+//Not working 
     void Update()
     {
         if(remainingTime > 0)
